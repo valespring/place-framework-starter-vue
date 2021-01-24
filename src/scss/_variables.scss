@@ -1,0 +1,27 @@
+$transparent: rgba(255, 255, 255, 0);
+
+// Type
+$columba-ruby-ultra: 'columba-ruby-ultra';
+$heading-font: $columba-ruby-ultra;
+
+$type-scale: (
+	inch-text: 56,
+	canon-text: 42,
+	paragon-text: 36,
+	primer-text: 28,
+	tertia-text: 22,
+	normal-text: 16,
+	petite-text: 14,
+	minion-text: 12,
+);
+
+$type-line-height: (
+	inch-text: 60,
+	canon-text: 42,
+	paragon-text: 38,
+	primer-text: 30,
+	tertia-text: 26,
+	normal-text: 22,
+	petite-text: 20,
+	minion-text: false,
+);
