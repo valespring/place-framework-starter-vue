@@ -1,7 +1,7 @@
 $transparent: rgba(255, 255, 255, 0);
 
 // Type
-$columba-ruby-ultra: 'columba-ruby-ultra';
+$columba-ruby-ultra: "columba-ruby-ultra";
 $heading-font: $columba-ruby-ultra;
 
 $type-scale: (
@@ -12,7 +12,7 @@ $type-scale: (
 	tertia-text: 22,
 	normal-text: 16,
 	petite-text: 14,
-	minion-text: 12,
+	minion-text: 12
 );
 
 $type-line-height: (
@@ -23,5 +23,5 @@ $type-line-height: (
 	tertia-text: 26,
 	normal-text: 22,
 	petite-text: 20,
-	minion-text: false,
+	minion-text: false
 );
