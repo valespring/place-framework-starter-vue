@@ -1,6 +1,6 @@
 {
   "name": "@place-framework/place-framework-starter-vue",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A Vue starter pack for the PLACE SCSS framework.",
   "scripts": {
     "build": "webpack --mode production",
