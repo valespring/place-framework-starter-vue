@@ -1,26 +1,19 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+// Vue Base
+import {
+	createRouter, createWebHistory
+} from 'vue-router';
 
-Vue.use(VueRouter);
+// Views
+// eslint-disable-next-line
+import * as routeViews from '../views';
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-];
+const routes = [{
+	path: '/', component: getView(Home)
+}];
 
-const router = new VueRouter({
-  mode: "history",
-  routes,
+const router = createRouter({
+	history: createWebHistory(),
+	routes
 });
 
 export default router;

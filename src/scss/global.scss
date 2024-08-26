@@ -1,12 +1,12 @@
-@import "_variables";
+@import 'variables';
 
 // Import From Place
-@import "place-functions";
-@import "place-mixins";
-@import "place-config";
-@import "place-normalize";
-@import "place-placeholders";
-@import "place-core";
+@import 'place-functions';
+@import 'place-mixins';
+@import 'place-config';
+@import 'place-normalize';
+@import 'place-placeholders';
+@import 'place-core';
 
-@import "site/_type";
-@import "site/_base";
+@import 'site/type';
+@import 'site/base';
