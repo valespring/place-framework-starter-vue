@@ -4,11 +4,10 @@ import {
 } from 'vue-router';
 
 // Views
-// eslint-disable-next-line
-import * as routeViews from '../views';
+import { getRouteView } from '../views';
 
 const routes = [{
-	path: '/', component: getView(Home)
+	path: '/', component: getRouteView('Home')
 }];
 
 const router = createRouter({

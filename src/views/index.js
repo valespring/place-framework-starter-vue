@@ -4,6 +4,9 @@ const routeViews = {
 	Home
 };
 
-export function getView(name) {
+export const getRouteView = (name) => {
 	return routeViews[name];
-}
+};
+
+export default routeViews;
+
