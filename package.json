@@ -1,7 +1,7 @@
 {
-  "name": "brian-bianca",
-  "version": "1.0.0",
-  "description": "Brian and Bianca",
+  "name": "@place-framework/place-framework-starter-vue",
+  "version": "2.0.1",
+  "description": "A Vue starter pack for the PLACE SCSS framework.",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --env fix=true",
