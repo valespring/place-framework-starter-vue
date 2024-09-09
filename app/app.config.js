@@ -3,6 +3,13 @@ const METAS = require('./app.meta');
 
 module.exports = {
 	PATH: {
+		SRC: `${APP_PATH.src}`,
+		SRC_ASSETS: `${APP_PATH.src}/assets`,
+		SRC_IMAGES: `${APP_PATH.src}/assets/images`,
+		SRC_COMPONENTS: `${APP_PATH.src}/components`,
+		SRC_VIEWS: `${APP_PATH.src}/views`,
+		SRC_SCSS: `${APP_PATH.src}/scss`,
+		SRC_UTILS: `${APP_PATH.src}/utils`,
 		OUTPUT: `${APP_PATH.output}`,
 		ENTRY: `${APP_PATH.src}/main.js`,
 		TEMPLATE: `${APP_PATH.src}/public/index.html`,

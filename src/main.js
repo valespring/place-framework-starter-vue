@@ -1,5 +1,13 @@
-import { createApp } from 'vue';
+// Vue
+import { createApp, h } from 'vue';
 import router from './router';
 import App from './App.vue';
 
-createApp(App).use(router).mount('#app');
+// Styles
+import './scss/global.scss';
+
+const app = createApp({
+	render: () => h(App)
+});
+
+app.use(router).mount('#app');

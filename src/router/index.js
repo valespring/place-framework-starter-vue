@@ -1,17 +1,13 @@
-// Vue Base
-import {
-	createRouter, createWebHistory
-} from 'vue-router';
+import { createMemoryHistory, createRouter } from 'vue-router';
 
-// Views
-import { getRouteView } from '../views';
+import Home from '@views/Home.vue';
 
-const routes = [{
-	path: '/', component: getRouteView('Home')
-}];
+const routes = [
+	{ path: '/', component: Home }
+];
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createMemoryHistory(),
 	routes
 });
 
