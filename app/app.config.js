@@ -7,6 +7,7 @@ module.exports = {
 		SRC_ASSETS: `${APP_PATH.src}/assets`,
 		SRC_IMAGES: `${APP_PATH.src}/assets/images`,
 		SRC_COMPONENTS: `${APP_PATH.src}/components`,
+		SRC_CONSTANTS: `${APP_PATH.src}/constants`,
 		SRC_VIEWS: `${APP_PATH.src}/views`,
 		SRC_SCSS: `${APP_PATH.src}/scss`,
 		SRC_UTILS: `${APP_PATH.src}/utils`,

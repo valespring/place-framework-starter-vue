@@ -1,9 +1,9 @@
 import { createMemoryHistory, createRouter } from 'vue-router';
 
-import Home from '@views/Home.vue';
+import Demo from '@views/Demo.vue';
 
 const routes = [
-	{ path: '/', component: Home }
+	{ path: '/', component: Demo }
 ];
 
 const router = createRouter({
