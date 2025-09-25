@@ -23,7 +23,7 @@
   "author": "Brian Kelley",
   "license": "ISC",
   "devDependencies": {
-    "@place-framework/place-framework": "^3.0.0",
+    "@place-framework/place-framework": "^3.0.1",
     "@place-framework/place-webpack-preset": "^3.0.0",
     "@types/node": "^24.3.0",
     "concurrently": "^8.2.2",
