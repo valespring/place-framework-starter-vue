@@ -65,8 +65,6 @@ module.exports = {
 			'@': path.resolve(__dirname, APP_CONFIG.PATH.SRC),
 			'@a': path.resolve(__dirname, APP_CONFIG.PATH.SRC_ASSETS),
 			'@c': path.resolve(__dirname, APP_CONFIG.PATH.SRC_COMPONENTS),
-			'@v': path.resolve(__dirname, APP_CONFIG.PATH.SRC_CONSTANTS),
-			'@u': path.resolve(__dirname, APP_CONFIG.PATH.SRC_UTILS),
 			'@img': path.resolve(__dirname, APP_CONFIG.PATH.SRC_IMAGES),
 			'@scss': path.resolve(__dirname, APP_CONFIG.PATH.SRC_SCSS),
 			'@views': path.resolve(__dirname, APP_CONFIG.PATH.SRC_VIEWS),
