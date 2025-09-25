@@ -7,7 +7,7 @@
       </pre>
       <RowContainer :flex="demoRow.flex" :flush="demoRow.flush" :rtl="demoRow.rtl">
          <RowItem v-for="item in demoRow.items" :bind="item" :cols="demoRow.cols" :offset="demoRow.offset">
-            <div class="item-fill">
+            <div class="item-fill item-spaced">
               {{item}}
             </div>
           </RowItem>
@@ -23,6 +23,19 @@
             {{item}}
           </div>
       </GridContainer>
+    </div>
+
+    <div>
+      <h2 v-for="text in typeScale" :class="text">{{text}}</h2>
+      <button>Text</button>
+    </div>
+
+
+    <div class="vertical-rhythm">
+      <h2>Vertical Rhythm</h2>
+      <p class="rhythm-1">Item 1</p>
+      <p class="rhythm-2">Item 2</p>
+      <p class="rhythm-3">Item 3</p>
     </div>
   </Wrapper>
 </template>
@@ -44,12 +57,21 @@
     },
     data() {
       return {
-        varsDescription: '"cols" var used',
+         typeScale: [
+          'inch-type',
+          'canon-type',
+          'paragon-type',
+          'primer-type',
+          'tertia-type',
+          'normal-type',
+          'petite-type',
+          'minion-type'
+        ],
         demoGrids: [
           {
             sectionClassName: 'demo-grid-normal',
             description: 'A normal CSS grid with no spacing.',
-            cols: ['quarters', 'halves', 'halves'],
+            cols: ['QUARTERS', 'HALVES', 'HALVES'],
             color: '#FCEFEF',
             spaced: false,
             items: [
@@ -62,8 +84,8 @@
           {
             sectionClassName: 'demo-grid-normal',
             description: 'A normal CSS grid with spacing.',
-            cols: ['quarters', 'halves', 'halves'],
-            color: '#FCEFEF',
+            cols: ['QUARTERS', 'HALVES', 'HALVES'],
+            color: '#fff9f9',
             spaced: true,
             items: [
               'Grid Item 1',

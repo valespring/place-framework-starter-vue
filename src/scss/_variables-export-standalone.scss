@@ -1,0 +1,26 @@
+// Standalone SCSS variables export file to avoid circular dependencies
+// This file imports framework variables directly without going through our custom variables
+
+// Import the export mixin from place-framework
+@use '@place-framework/place-framework/scss/mixins/export' as export-mixins;
+
+// Import the default variables from place-framework directly
+@use '@place-framework/place-framework/scss/variables/export' as framework-vars;
+
+// Import individual config modules directly to get the variables we need
+@use '@place-framework/place-framework/scss/config/grid' as grid-config;
+@use '@place-framework/place-framework/scss/config/viewports' as viewport-config;
+
+// Define a minimal set of custom variables for export
+$standalone-export-variables: (
+	// Add any custom variables you need to export to JS here
+	 // These should be defined directly, not imported from other files
+);
+
+:export {
+	// Include default framework variables
+	@include export-mixins.export-vars(framework-vars.$static-variables);
+
+	// Include custom variables defined above
+	@include export-mixins.export-vars($standalone-export-variables);
+}

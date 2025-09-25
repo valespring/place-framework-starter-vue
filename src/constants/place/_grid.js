@@ -1,11 +1,15 @@
-import BASE from '@v/place/_base';
-import CONVERSIONS from '@v/place/_conversions';
+import BASE from './_base';
+import CONVERSIONS from './_conversions';
+import {
+	GRID_GAP_MODIFIER,
+	CSS_GRID_IDENTIFIER
+} from './_scss-variables';
 
 export default {
 	SEP: BASE.SEP,
-	CLASS_PREFIX: 'grid',
+	CLASS_PREFIX: CSS_GRID_IDENTIFIER,
 	MODIFIERS: {
-		SPACED: '--gapped'
+		SPACED: GRID_GAP_MODIFIER
 	},
 	FRACTIONS: CONVERSIONS.PLURAL
 };

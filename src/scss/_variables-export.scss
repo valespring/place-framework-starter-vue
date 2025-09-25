@@ -1,0 +1,5 @@
+// Direct import from framework's variables export - this already has :export block
+@use '@place-framework/place-framework/scss/variables/_export' as *;
+
+// If you need to add custom variables for export, define them here
+// and create a separate :export block, but for now we'll use the framework's export

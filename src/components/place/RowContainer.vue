@@ -7,7 +7,7 @@
 
 <script lang="js">
 	import { defineComponent } from 'vue';
-	import { BASE, ROW, VIEWPORTS, PROPS } from '@v/place';
+	import { PROPS, generateRowClasses } from '@place-framework/place-framework';
 
 	export default defineComponent({
 		name: 'RowContainer',
@@ -35,14 +35,11 @@
 		},
 		methods: {
 			setContainerClasses() {
-				const suffix = this.flush ? ROW.MODIFIERS.FLUSH : this.flex ? ROW.MODIFIERS.FLEX : '';
-				const suffixWithDirection = this.rtl ? suffix + ROW.MODIFIERS.RTL : suffix;
-
-				const rowClassArray = this.viewports.map(viewport => {
-					return `${ROW.CLASS_PREFIX}${ROW.SEP}${viewport}${suffixWithDirection}`;
+				this.containerClasses = generateRowClasses(this.viewports, {
+					flex: this.flex,
+					flush: this.flush,
+					rtl: this.rtl
 				});
-
-				this.containerClasses = rowClassArray.join(' ');
 			}
 		}
 	});

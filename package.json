@@ -1,6 +1,6 @@
 {
   "name": "@place-framework/place-framework-starter-vue",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "description": "A Vue starter pack for the PLACE SCSS framework.",
   "scripts": {
     "build": "webpack --mode production",
@@ -16,12 +16,16 @@
     "prettier:fix": "npm run prettier -- --write --ignore-unknown ",
     "prettier:watch": "onchange \"**/*.scss\" -- npm run prettier:fix {{changed}}"
   },
-  "keywords": ["place framework", "place framework starter vue"],
+  "keywords": [
+    "place framework",
+    "place framework starter vue"
+  ],
   "author": "Brian Kelley",
   "license": "ISC",
   "devDependencies": {
-    "@place-framework/place-framework": "^2.0.9",
-    "@place-framework/place-webpack-preset": "^2.0.6",
+    "@place-framework/place-framework": "^3.0.0",
+    "@place-framework/place-webpack-preset": "^3.0.0",
+    "@types/node": "^24.3.0",
     "concurrently": "^8.2.2",
     "css-loader": "^7.1.2",
     "eslint-plugin-vue": "^9.28.0",
@@ -33,6 +37,8 @@
     "postcss-loader": "^8.1.1",
     "sass-loader": "^16.0.1",
     "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.9.2",
     "vue": "^3.4.38",
     "vue-loader": "^17.4.2",
     "vue-router": "^4.4.3",
@@ -49,5 +55,8 @@
     "postcss": "^8.4.41",
     "sass": "^1.77.8",
     "stylelint": "^16.8.2"
+  },
+  "dependencies": {
+    "puppeteer": "^24.15.0"
   }
 }

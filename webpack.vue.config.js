@@ -20,6 +20,14 @@ module.exports = {
 				loader: 'vue-loader'
 			},
 			{
+				test: /\.tsx?$/,
+				loader: 'ts-loader',
+				options: {
+					appendTsSuffixTo: [/\.vue$/],
+				},
+				exclude: /node_modules/,
+			},
+			{
 				test: /\.css$/i,
 				use: ['style-loader', 'css-loader']
 			},
@@ -62,13 +70,15 @@ module.exports = {
 			'@img': path.resolve(__dirname, APP_CONFIG.PATH.SRC_IMAGES),
 			'@scss': path.resolve(__dirname, APP_CONFIG.PATH.SRC_SCSS),
 			'@views': path.resolve(__dirname, APP_CONFIG.PATH.SRC_VIEWS),
-			
 		},
 		extensions: [
 			'.*',
 			'.js',
+			'.ts',
+			'.tsx',
 			'.vue',
-			'.json'
+			'.json',
+			'.scss'
 		]
 	},
 	optimization: {

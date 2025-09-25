@@ -1,10 +1,12 @@
-// Conversions
+import { QUICK_GRID_WIDTHS } from './_scss-variables';
+
+// Use SCSS-exported fractions instead of hardcoded calculations
 const BASE = {
-	full: 1 / 1,
-	half: 1 / 2,
-	third: 1 / 3,
-	quarter: 1 / 4,
-	fifth: 1 / 5
+	full: QUICK_GRID_WIDTHS.full,
+	half: QUICK_GRID_WIDTHS.half,
+	third: QUICK_GRID_WIDTHS.third,
+	quarter: QUICK_GRID_WIDTHS.quarter,
+	fifth: QUICK_GRID_WIDTHS.fifth
 };
 
 export default {

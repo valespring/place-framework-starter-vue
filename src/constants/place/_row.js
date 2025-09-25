@@ -1,11 +1,17 @@
-import BASE from '@v/place/_base';
+import BASE from './_base';
+import {
+	GRID_ROW_IDENTIFIER,
+	GRID_FLEX_MODIFIER,
+	GRID_RTL_MODIFIER,
+	GRID_FLEX_FLUSH_MODIFIER
+} from './_scss-variables';
 
 export default {
 	SEP: BASE.SEP,
-	CLASS_PREFIX: 'row',
+	CLASS_PREFIX: GRID_ROW_IDENTIFIER,
 	MODIFIERS: {
-		FLEX: '__flex',
-		RTL: '--rtl',
-		FLUSH: '__flush'
+		FLEX: GRID_FLEX_MODIFIER,
+		RTL: GRID_RTL_MODIFIER,
+		FLUSH: GRID_FLEX_FLUSH_MODIFIER
 	}
 };

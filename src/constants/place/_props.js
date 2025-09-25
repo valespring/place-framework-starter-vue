@@ -1,5 +1,5 @@
-import BASE from '@v/place/_base';
-import VIEWPORTS from '@v/place/_viewports';
+import BASE from './_base';
+import VIEWPORTS from './_viewports';
 
 export default {
 	el: {

@@ -7,7 +7,7 @@
 
 <script lang="js">
 	import { defineComponent } from 'vue';
-	import { BASE, GRID, VIEWPORTS, PROPS } from '@v/place';
+	import { PROPS, generateGridClasses } from '@place-framework/place-framework';
 
 	export default defineComponent({
 		name: 'GridContainer',
@@ -31,16 +31,9 @@
 		},
 		methods: {
 			setContainerClasses() {
-				const modifierSuffix = this.spaced ? GRID.MODIFIERS.SPACED  : '';
-
-				const gridClassArray = this.cols.map((col, i) => {
-					const viewportKey = this.viewports[i];
-					const suffix = `${col}${modifierSuffix}`;
-
-					return `${GRID.CLASS_PREFIX}${GRID.SEP}${viewportKey}${GRID.SEP}${suffix}`;
+				this.containerClasses = generateGridClasses(this.viewports, this.cols, {
+					spaced: this.spaced
 				});
-
-				this.containerClasses = gridClassArray.join(' ');
 			}
 		}
 	});

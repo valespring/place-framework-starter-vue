@@ -1,18 +1,18 @@
 <template>
-	<component :is="el" class="container" v-bind="$attrs">
+	<component :is="el" class="wrapper" v-bind="$attrs">
 		<slot />
 	</component>
 </template>
 
 
-<script lang="js">
-	import { defineComponent } from 'vue';
-	import {  PROPS } from '@v/place';
-
-	export default defineComponent({
+<script>
+	export default {
 		name: 'Wrapper',
 		props: {
-			...PROPS
+			el: {
+				type: String,
+				default: 'div'
+			}
 		}
-	});
+	};
 </script>
